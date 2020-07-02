@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<configuration debug="false">
+
+    <!-- 应用名称 -->
+    <contextName>learn-mybatis3-l01</contextName>
+
+    <!-- 输出到控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- 定义日志输出格式 -->
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss:SSS}][%thread][%-5level][%logger{36}]- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 配置根logger, 级别配置为DEBUG 可以输出sql语句 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
